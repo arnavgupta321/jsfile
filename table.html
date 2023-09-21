@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>JSON to HTML Table</title>
+    <style>
+        td {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+</table>
+
+<script>
+    
+    var jsonData = [
+        { "name": "Alice", "age": 25, "gender": "Female" },
+        { "name": "Arnav", "age": 23, "gender": "Male" },
+        { "name": "Rahul", "age": 21, "gender": "Male" },
+        { "name": "Aman", "age": 23, "gender": "Male" },
+        { "name": "Anurag", "age": 24, "gender": "Male" },
+        { "name": "Aman", "age": 22, "gender": "Male" },
+        { "name": "Ravi", "age": 29, "gender": "Male" },
+        { "name": "Mohit", "age": 23, "gender": "Male" },
+        { "name": "Sonu", "age": 23, "gender": "Male" },
+        { "name": "RITIKA", "age": 25, "gender": "Male" },
+        { "name": "Mohit", "age": 23, "gender": "Male" },
+        { "name": "Shristy", "age": 26, "gender": "Female" },
+        { "name": "Soni", "age": 23, "gender": "Female" },
+        { "name": "Arshi", "age": 33, "gender": "Female" },
+        { "name": "Moni", "age": 23, "gender": "Male" },
+        { "name": "raj", "age": 13, "gender": "Male" },
+        { "name": "RANJAN", "age": 23, "gender": "Male" },
+        { "name": "RAVI", "age": 29, "gender": "Male" },
+        { "name": "MESHI", "age": 23, "gender": "Male" },
+        
+    ];
+
+    
+    var tableBody = document.getElementById("table-body");
+
+    
+    jsonData.forEach(function (entry) {
+        var row = document.createElement("tr");
+        var nameCell = document.createElement("td");
+        nameCell.textContent = entry.name;
+        var ageCell = document.createElement("td");
+        ageCell.textContent = entry.age;
+        var genderCell = document.createElement("td");
+        genderCell.textContent = entry.gender;
+        row.appendChild(nameCell);
+        row.appendChild(ageCell);
+        row.appendChild(genderCell);
+        tableBody.appendChild(row);
+    });
+</script>
+
+</body>
+</html>
