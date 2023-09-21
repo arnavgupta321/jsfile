@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO</title>
+</head>
+<style>
+    p{
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: yellow;
+    }
+    body{
+        background-color: black;
+    }
+</style>
+<body style="text-align: center;">
+    <h2>JavaScript Object</h2>
+    <p style="color: brown;">do u want to come in the class</p>
+    <p style="color: blueviolet;">you can use  person.property or person["property"]</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <button type="button" onclick="myFunction()">Click</button>
+    <button onclick="window.print()">print the page</button>
+
+    <script>
+        function myFunction(){
+        const person={
+            firstName:"Arnav ",
+            lastName:"Gupta",
+
+             roll:"17",
+            occupa :"student",
+            college :"kiet group of instition",
+            phNO :9934954231,
+            Age :17,
+            address:"tilkamajhi bhjagalpur",
+
+
+        }
+        document.getElementById("demo").innerHTML="My name is_"+person.firstName +"--#";
+
+        document.getElementById("demo1").innerHTML="My lastname is_"+person.lastName +"--#";
+        document.getElementById("demo2").innerHTML="My rollNo is_" +person.roll +"--#";
+        document.getElementById("demo3").innerHTML="My occupation is_"+person.occupa +"--#";
+        document.getElementById("demo4").innerHTML="My college is_"+person.college +"__#";
+        document.getElementById("dem05").innerHTML="My phNo is_"+person.phNo +"__#";
+        document.getElementById("demo6").innerHTML="My age is_"+person.Age +"--#";
+        document.getElementById("demo7").innerHTML="My address is_"+person.address +"--#";
+    }
+
+    </script>
+
+</body>
+</html>
