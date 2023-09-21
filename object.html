@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<style>
+    #demo{
+        background-color: blueviolet;
+        text-shadow: 0cm;
+        text-decoration-style: solid;
+        display: flex;
+    }
+</style>
+
+<body>
+    <h1>The car model</h1>
+    <p id="demo" style="color: black;"></p>
+    <script>
+        const car={type:"safari", model:"2022", colour:"black"};
+
+        document.getElementById("demo").innerHTML="The car type is" +car.type+"-________-"+car.model+"___"+car.colour;
+    </script>
+</body>
+</html>
